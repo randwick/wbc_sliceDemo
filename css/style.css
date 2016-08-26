@@ -1,0 +1,281 @@
+/* -----------------
+RESET 重置
+------------------*/
+
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button,textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+img {border: 0;}
+:focus {outline: 0;}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 100%;
+}
+input, button, textarea,select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+code, kbd, samp, tt {font-size: 100%;}
+
+/*purpose To enable resizing for IE */
+/*branch For IE6-Win, IE7-Win */
+input, button, textarea, select {*font-size: 100%;}
+body {line-height: 160%;}
+ol, ul, li {list-style: none;}
+:link, :visited , ins {text-decoration: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+
+/*HTML5 tag*/
+section, article, aside, footer, header, nav, main {
+  display:block;
+}
+
+/* -----------------
+BASE
+------------------*/
+
+body {
+	background: #f4f5f7;
+	font-size: 15px;
+	font-family: arial, sans-serif;
+	line-height: 160%;
+}
+
+a {
+	color: #888;
+}
+
+a:hover {
+	color: #e40000;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+.container-1440 {
+	width: 1440px;
+	margin: 0 auto;
+}
+
+.container-960 {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+/* -----------------
+HEADER
+------------------*/
+
+.header-top {
+	background: #c94c46;
+	overflow: hidden;
+	padding: 5px 0;
+}
+
+.logo {
+	float: left;
+}
+
+.logo a {
+	background: url("../img/logo.png") no-repeat 0 0;
+	display: inline-block;
+	width: 184px;
+	height: 60px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+nav {
+	float: right;
+	line-height: 64.5px;
+}
+
+nav a {
+	color: #fff;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: .5em;
+}
+
+/* -----------------
+BANNER
+------------------*/
+
+#banner {
+	background: url("../img/banner.jpg") no-repeat 0 0;
+	height: 800px;
+}
+
+.banner-content {
+	color: #fff;
+	font-size: 4.2em;
+	line-height: 150%;
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(11, 59, 0, .75);
+	height: 800px;
+}
+
+.banner-content::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+}
+
+.banner-content p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* -----------------
+CONTENT
+------------------*/
+
+.bg-grey {
+	background: #e9e9e9;
+}
+
+.icon {
+	margin-right: 5px;
+}
+
+section {
+	padding-bottom: 70px;
+}
+
+section h2 {
+	text-align: center;
+	padding: 70px 0 20px 0;
+	color: #676769;
+}
+
+.feature-area {
+	overflow: hidden;
+}
+
+figure {
+	width: 300px;
+	float: left;
+	margin: 0 10px;
+	text-align: center;
+}
+
+figure h3 {
+	color: #555;
+	margin: 15px 0;
+}
+
+.des {
+	color: #a5a5a5;
+	text-align: center;
+}
+
+form {
+	width: 650px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.form input {
+	background: #e86b6b;
+	border: 0;
+	color: white;
+	margin-left: 5px;
+	width: 240px;
+	border-radius: 3px;
+	padding: 4px 5px;
+}
+
+.form textarea {
+	background: #eee;
+	border: 3px solid #e86b6b;
+	border-radius: 3px;
+	width: 296px;
+	padding: 5px 10px;
+	height: 75px;
+}
+
+.form {
+	float: left;
+}
+
+.form-data p {
+	margin-bottom: 5px;
+	color: #555;
+}
+
+.form-msg {
+	margin-left: 17px;
+}
+
+.form-btn {
+	clear: both;
+	text-align: center;
+	padding-top: 1.5em;
+}
+
+.form-btn button {
+	border: 0;
+	background: transparent;
+	color: #e86b6b;
+	border-bottom: 3px solid #e86b6b;
+}
+
+.media-img {
+	position: relative;
+	height: 400px;
+	width: 820px;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+
+.media-img-bigthumb {
+	position: absolute;
+}
+
+.media-img-smallthumb {
+	position: absolute;
+	left: 420px;
+}
+
+.media-img-smallthumb img:nth-child(2n) {
+	position: relative;
+	left: 20px;
+}
+
+.media-img-smallthumb img:nth-child(3), .media-img-smallthumb img:nth-child(4) {
+	position: relative;
+	top: 20px;
+}
+
+/* -----------------
+FOOTER
+------------------*/
+
+.footer {
+	background: #c94c46;
+}
+
+.footer-info {
+	text-align: center;
+	color: #e9e9e9;
+	padding: 5px 0;
+}
